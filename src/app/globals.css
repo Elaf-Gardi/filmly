@@ -1,13 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: 236, 239, 240;
-  --light_pink: 249, 224, 227;
-  --primary_pink: 236, 199, 206;
-  --light_blue: 214, 237, 245;
-  --primary_blue: 176, 208, 231;
-  --light_green: 225, 245, 218;
-  --primary_green: 206, 233, 190;
-}
