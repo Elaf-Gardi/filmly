@@ -1,9 +1,10 @@
 import React from "react"
+import MovieList from "../movies/MovieList"
 const Hero = () => {
   return (
-    <div className="bg-background h-screen p-5">
-      <h1>hello</h1>
-    </div>
+    <>
+     <MovieList/>
+    </>
   )
 }
 export default Hero
