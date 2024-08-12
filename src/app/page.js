@@ -1,9 +1,9 @@
-import SideBar from "@/components/sidebar/SideBar";
+import Hero from "@/components/hero/Hero";
 
 export default function Home() {
   return (
-   <main className="bg-background w-full min-h-screen">
-    <SideBar/>
-   </main>
+   <>
+   <Hero/>
+   </>
   );
 }
