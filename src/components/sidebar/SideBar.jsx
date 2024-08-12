@@ -41,6 +41,7 @@ const SideBar = () => {
         </Link>
 
         <div className="flex flex-col mb-auto">
+          <Link href="/">
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
               active === "Home" ? "bg-light_purple text-white" : "text-light_gray"
@@ -50,6 +51,8 @@ const SideBar = () => {
             <IoHome className="text-xl" />
             <h2 className="text-lg font-medium">Home</h2>
           </div>
+          </Link>
+          
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
               active === "Wishlist" ? "bg-light_purple text-white" : "text-light_gray"
