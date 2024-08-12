@@ -1,9 +1,8 @@
-import React from 'react'
-import SideBar from '../sidebar/SideBar'
+import React from "react"
 const Hero = () => {
   return (
-    <div className='bg-background h-screen'>
-    <SideBar/>
+    <div className="bg-background h-screen p-5">
+      <h1>hello</h1>
     </div>
   )
 }
