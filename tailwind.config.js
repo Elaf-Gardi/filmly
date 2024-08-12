@@ -20,7 +20,8 @@ module.exports = {
       colors: {
         background: "#e1e1e1",
         primary_orange: "#FDBA74",
-        primary_blue: "#57708D"
+        dark_orange:"#fab063",
+        primary_blue: "#57708D",
       },
     },
   },
