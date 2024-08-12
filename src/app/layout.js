@@ -1,5 +1,5 @@
 import SideBar from "@/components/sidebar/SideBar";
-import Header from "@/components/header/Header";
+import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -10,18 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="h-screen flex flex-col">
+      <body className="h-screen flex flex-col bg-dark_gray">
         <div className="flex flex-grow">
-          <div className="w-60">
-            <SideBar />
-          </div>
-          <div className="flex flex-col flex-grow">
-            <div className="h-20 bg-red-50">
-              <Header />
-            </div>
-            <div className="flex-grow">
-              {children}
-            </div>
+          <SideBar />
+          <div className="flex flex-col flex-grow px-14">
+            <Navbar />
+            <div className="flex-grow p-4 lg:p-8">{children}</div>
           </div>
         </div>
       </body>
