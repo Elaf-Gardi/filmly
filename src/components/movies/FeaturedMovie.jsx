@@ -33,7 +33,7 @@ const FeaturedMovie = ({ movie }) => {
           <p className="ml-2 font-normal text-sm text-white">Hot Movie Now</p>
         </div>
       </div>
-       
+      
       {/**Button */}
 
       {/**  <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
@@ -47,11 +47,12 @@ const FeaturedMovie = ({ movie }) => {
 
       <div className="absolute flex flex-row bottom-0 left-0 gap-2">
         <Link href={`/movies/${movie.id}`} passHref>
-          <WatchNowButton />
+          <WatchNowButton className="extra-border"/>
         </Link>
-        <WishListButton />
+        <WishListButton className="extra-border"/>
         <div className="inv-bord-left"></div>
       </div>
+      
     </div>
   )
 }

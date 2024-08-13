@@ -27,6 +27,10 @@ module.exports = {
         dark_purple: "#3F3D56",
         dark_gray: "#24252D",
         light_gray: "#8C8C8E",
+        /** */
+        primary_gray:'#363636',
+        darkGray:'#1F1F1F',
+        primary_green:'#C7F14F'
       },
     },
   },
