@@ -41,6 +41,7 @@ const SideBar = () => {
         </Link>
 
         <div className="flex flex-col mb-auto">
+          <Link href="/">
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
               active === "Home" ? "bg-light_purple text-white" : "text-light_gray"
@@ -49,6 +50,16 @@ const SideBar = () => {
           >
             <IoHome className="text-xl" />
             <h2 className="text-lg font-medium">Home</h2>
+          </div>
+          </Link>
+          <div
+            className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
+              active === "TV shows" ? "bg-light_purple text-white" : "text-light_gray"
+            }`}
+            onClick={() => handleSetActive("TV shows")}
+          >
+            <RiTvFill className="text-xl" />
+            <h2 className="text-lg font-medium">TV shows</h2>
           </div>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
@@ -67,15 +78,6 @@ const SideBar = () => {
           >
             <FaHeart className="text-xl" />
             <h2 className="text-lg font-medium">Favorite</h2>
-          </div>
-          <div
-            className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "TV shows" ? "bg-light_purple text-white" : "text-light_gray"
-            }`}
-            onClick={() => handleSetActive("TV shows")}
-          >
-            <RiTvFill className="text-xl" />
-            <h2 className="text-lg font-medium">TV shows</h2>
           </div>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${

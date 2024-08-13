@@ -1,9 +1,12 @@
 import React from "react"
+import MovieList from "../movies/MovieList"
+import SearchBar from "../searchBar/SearchBar"
 const Hero = () => {
   return (
-    <div className="bg-background h-screen p-5">
-      <h1>hello</h1>
-    </div>
+    <main className="flex flex-col lg:ml-60 px-10 mb-5">
+      <SearchBar />
+      <MovieList />
+    </main>
   )
 }
 export default Hero

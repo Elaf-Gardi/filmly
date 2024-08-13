@@ -1,5 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.inv-bord-left {
+    position: absolute;
+    bottom: -0.375rem; /* Adjust to move the border slightly below the button */
+    left: -0.375rem;   /* Adjust to move the border slightly left of the button */
+    width: calc(100% + 0.65rem); /* Width of the button plus the offsets */
+    height: calc(100% + 1rem); /* Height of the button plus the offsets */
+    border-radius: 0.3rem; /* Adjust as needed to match button's rounded corners */
+    background: #24252D; /* Background color for the border */
+    z-index: 5; /* Ensure the border is above the image but below the button */
+    box-shadow: 0.313rem 0.313rem 0 0.313rem #24252D;
+    pointer-events: none; /* Allow clicks to pass through to the button */
+}
+
+.inv-bord-right {
+    position: absolute;
+    top: -0.375rem; /* Adjust to move the border slightly below the button */
+    right: -0.375rem;   /* Adjust to move the border slightly left of the button */
+    width: calc(100% + 0.45rem); /* Width of the button plus the offsets */
+    height: calc(100% + 1rem); /* Height of the button plus the offsets */
+    border-radius: 0.3rem; /* Adjust as needed to match button's rounded corners */
+    background: #24252D; /* Background color for the border */
+    z-index: 1; /* Ensure the border is above the image but below the button */
+    box-shadow: -0.313rem -0.313rem 0 0.313rem #24252D;
+    pointer-events: none; /* Allow clicks to pass through to the button */
+}
+
+.extra-border {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+}
+
+.extra-border::after {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute;
+    bottom: -0.5rem; /* Position slightly below the button */
+    left: 50%; /* Center the border horizontally */
+    transform: translateX(-50%); /* Adjust the position to center it perfectly */
+    width: 120%; /* Slightly wider than the button */
+    height: calc(100% + 1rem); /* Height of the button plus the offset */
+    border-radius: 0.3rem; /* Adjust as needed */
+    background: #24252D; /* Background color for the border */
+    z-index: 0; /* Place it below the button */
+    box-shadow: 0px 0px 0.375rem 0.313rem #24252D;
+    pointer-events: none; /* Allow clicks to pass through */
+}
