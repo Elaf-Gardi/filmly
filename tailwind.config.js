@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        md: '12px',
+      },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
@@ -27,5 +30,12 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      backdropBlur: ['hover', 'focus'],
+    },
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+    ]
 }
