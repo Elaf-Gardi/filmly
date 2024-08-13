@@ -10,7 +10,7 @@ const MovieList = ({ genresData }) => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const moviesData = await fetchData("/trending/all/day")
+        const moviesData = await fetchData("/movie/now_playing")
         console.log(moviesData.results)
         setMovies(moviesData.results)
       } catch (error) {
@@ -31,19 +31,13 @@ const MovieList = ({ genresData }) => {
           <FeaturedMovie movie={featuredMovie} />
         </div>
       )}
-      <div className="flex flex-row flex-wrap gap-5">
+      <div className="flex flex-row flex-wrap lg:gap-7">
         {regularMovies.length > 0 &&
           regularMovies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
       </div>
-      {regularMovies.length > 0 && (
-        <div className="mt-8 text-center">
-          <button className="bg-green-500 text-white px-4 py-2 rounded">
-            See All
-          </button>
-        </div>
-      )}
+      
     </div>
   )
 }

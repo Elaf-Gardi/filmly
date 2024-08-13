@@ -5,7 +5,7 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
 
 const MovieCard = ({ movie }) => {
   return (
-    <div className="relative w-52 h-80 rounded-2xl transition-transform hover:scale-105 cursor-grabbing">
+    <div className="relative w-44 h-72 rounded-2xl transition-transform hover:scale-105 cursor-grabbing">
       <img
         src={`${IMAGE_BASE_URL}${movie.poster_path}`}
         alt={`Poster of ${movie.title}`}
