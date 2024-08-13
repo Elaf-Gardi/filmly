@@ -3,7 +3,7 @@ import { CiSearch } from "react-icons/ci";
 
 const SearchBar = () => {
   return (
-    <div className="relative w-full m-4 max-w-xs sm:max-w-md lg:max-w-3xl mx-auto bg-dark_purple rounded">
+    <div className="relative w-full m-4 sm:max-w-md lg:max-w-6xl mx-auto bg-dark_purple rounded">
       <input
         placeholder="Find movie or show"
         className="rounded w-full h-12 bg-transparent py-2 pl-8 pr-20 sm:pr-32 outline-none border-none text-white placeholder-light_gray"
