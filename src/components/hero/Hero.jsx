@@ -3,7 +3,7 @@ import MovieList from "../movies/MovieList"
 import SearchBar from "../searchBar/SearchBar"
 const Hero = () => {
   return (
-    <main className="flex flex-col lg:ml-60 px-10">
+    <main className="flex flex-col lg:ml-60 px-10 mb-5">
       <SearchBar />
       <MovieList />
     </main>
