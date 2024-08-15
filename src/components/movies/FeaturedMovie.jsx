@@ -46,9 +46,7 @@ const FeaturedMovie = ({ movie }) => {
       </div>
 
       <div className="absolute flex flex-row bottom-0 left-0 gap-2">
-        <Link href={`/movies/${movie.id}`} passHref>
-          <WatchNowButton />
-        </Link>
+        <WatchNowButton />
         <WishListButton />
         <div className="inv-bord-left"></div>
       </div>
