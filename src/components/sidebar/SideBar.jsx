@@ -20,22 +20,22 @@ const SideBar = () => {
   return (
     <>
       <button
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 text-white bg-light_purple rounded-md focus:outline-none"
+        className="lg:hidden fixed top-4 left-4 z-50 p-2 text-darkGray bg-primary_green rounded-md focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <FiMenu className="text-2xl" />
       </button>
 
       <div
-        className={`fixed z-40 h-full flex flex-col bg-dark_blue p-6 transition-transform transform ${
+        className={`fixed z-40 h-full flex flex-col bg-primary_gray p-6 transition-transform transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:translate-x-0 lg:w-64`}
       >
         <Link href="/">
           <div className="flex items-center gap-2 mb-16">
-            <LuClapperboard className="text-3xl text-light_purple" />
+            <LuClapperboard className="text-3xl text-primary_green" />
             <h1 className="font-bebas text-3xl font-bold tracking-widest text-white">
-              FILM<span className="text-light_purple">LY</span>
+              FILM<span className="text-primary_green">LY</span>
             </h1>
           </div>
         </Link>
@@ -44,7 +44,7 @@ const SideBar = () => {
           <Link href="/">
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "Home" ? "bg-light_purple text-white" : "text-light_gray"
+              active === "Home" ? "bg-primary_green text-darkGray" : "text-light_gray"
             }`}
             onClick={() => handleSetActive("Home")}
           >
@@ -54,7 +54,7 @@ const SideBar = () => {
           </Link>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "TV shows" ? "bg-light_purple text-white" : "text-light_gray"
+              active === "TV shows" ? "bg-primary_green text-darkGray" : "text-light_gray"
             }`}
             onClick={() => handleSetActive("TV shows")}
           >
@@ -63,7 +63,7 @@ const SideBar = () => {
           </div>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "Wishlist" ? "bg-light_purple text-white" : "text-light_gray"
+              active === "Wishlist" ? "bg-primary_green text-darkGray" : "text-light_gray"
             }`}
             onClick={() => handleSetActive("Wishlist")}
           >
@@ -72,7 +72,7 @@ const SideBar = () => {
           </div>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "Favorite" ? "bg-light_purple text-white" : "text-light_gray"
+              active === "Favorite" ? "bg-primary_green text-darkGray" : "text-light_gray"
             }`}
             onClick={() => handleSetActive("Favorite")}
           >
@@ -81,7 +81,7 @@ const SideBar = () => {
           </div>
           <div
             className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-              active === "Actors" ? "bg-light_purple text-white" : "text-light_gray"
+              active === "Actors" ? "bg-primary_green text-darkGray" : "text-light_gray"
             }`}
             onClick={() => handleSetActive("Actors")}
           >
@@ -92,7 +92,7 @@ const SideBar = () => {
 
         <div
           className={`flex items-center gap-4 p-3 rounded-md cursor-pointer ${
-            active === "Settings" ? "bg-light_purple text-white" : "text-light_gray"
+            active === "Settings" ? "bg-primary_green text-darkGray" : "text-light_gray"
           }`}
           onClick={() => handleSetActive("Settings")}
         >

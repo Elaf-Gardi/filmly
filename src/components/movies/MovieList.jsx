@@ -44,9 +44,9 @@ const MovieList = () => {
           <FeaturedMovie movie={featuredMovie} />
         </div>
       )}
-      <div className="flex flex-row justify-between items-center mb-3">
+      <div className="flex flex-row justify-between items-center mb-5">
         <h1 className="text-white font-bebas tracking-wide text-2xl">Popular Now</h1>
-        <p className="text-light_purple font-medium underline text-sm cursor-pointer">See All</p>
+        <p className="text-primary_green font-medium underline text-sm cursor-pointer">See All</p>
       </div>
       <div className="flex flex-row flex-wrap lg:gap-7">
         {regularMovies.length > 0 &&
