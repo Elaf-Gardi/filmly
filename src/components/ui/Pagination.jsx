@@ -11,7 +11,7 @@ const Pagination = ({ moviesPerPage, totalMovies, paginate, currentPage }) => {
   return (
     <div className="flex items-center justify-center p-5 gap-4">
       <button
-        className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-light_purple uppercase align-middle transition-all rounded-full select-none hover:bg-light_purple/10 active:bg-light_purple/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-primary_green uppercase align-middle transition-all rounded-full select-none hover:bg-primary_green/10 active:bg-primary_green/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
         onClick={() => paginate(currentPage > 1 ? currentPage - 1 : currentPage)}
         disabled={currentPage === 1}
@@ -38,8 +38,8 @@ const Pagination = ({ moviesPerPage, totalMovies, paginate, currentPage }) => {
           <button
             key={number}
             onClick={() => paginate(number)}
-            className={`relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-light_purple transition-all hover:bg-light_purple/10 active:bg-light_purple/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ${
-              currentPage === number ? "bg-light_purple text-white" : ""
+            className={`relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-primary_green transition-all hover:bg-primary_green/80 active:bg-primary_green/70 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ${
+              currentPage === number ? "bg-primary_green text-darkGray" : ""
             }`}
           >
             <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
@@ -49,7 +49,7 @@ const Pagination = ({ moviesPerPage, totalMovies, paginate, currentPage }) => {
         ))}
       </div>
       <button
-        className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-light_purple uppercase align-middle transition-all rounded-full select-none hover:bg-light_purple/10 active:bg-light_purple/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+        className="flex items-center gap-2 px-6 py-3 font-sans text-xs font-bold text-center text-primary_green uppercase align-middle transition-all rounded-full select-none hover:bg-primary_green/10 active:bg-primary_green/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
         type="button"
         onClick={() =>
           paginate(
