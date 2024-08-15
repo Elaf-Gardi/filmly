@@ -39,7 +39,7 @@ const Pagination = ({ moviesPerPage, totalMovies, paginate, currentPage }) => {
             key={number}
             onClick={() => paginate(number)}
             className={`relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-primary_green transition-all hover:bg-primary_green/80 active:bg-primary_green/70 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ${
-              currentPage === number ? "bg-primary_green text-darkGray" : ""
+              currentPage === number ? "bg-primary_green text-white" : ""
             }`}
           >
             <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
